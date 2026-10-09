@@ -4,20 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Análisis de Las Cuchas tienen razón como caso de comunicación comunitaria en red e infoactivismo en Colombia." />
+  <meta name="theme-color" content="#ffe900" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Las Cuchas tienen razón — Comunicación comunitaria en red" />
+  <meta property="og:description" content="De la calle a la red y de la red a la memoria colectiva: un análisis académico del caso." />
+  <meta property="og:locale" content="es_CO" />
   <title>Las Cuchas tienen razón — Comunicación comunitaria en red</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#tesis">Saltar al contenido</a>
   <header class="hero" id="inicio">
-    <nav class="nav wrap">
+    <div class="reading-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+    <nav class="nav wrap" aria-label="Navegación principal">
       <a class="brand" href="#inicio">COMUNIDAD × RED</a>
       <div class="navlinks">
         <a href="#tesis">Tesis</a>
         <a href="#ejes">3 ejes</a>
+        <a href="#evidencia">Datos</a>
         <a href="#hallazgos">Hallazgos</a>
+        <a href="#viralidad">Viralidad</a>
         <a href="#fuentes">Fuentes</a>
       </div>
     </nav>
@@ -31,12 +38,11 @@
           <a class="btn ghost" href="assets/investigacion-grupo.pdf" target="_blank" rel="noopener">Investigación del grupo ↗</a>
         </div>
       </div>
-      <aside class="hero-card">
-        <div class="stat"><strong>76</strong><span>murales confirmados</span></div>
-        <div class="stat"><strong>21</strong><span>departamentos</span></div>
-        <div class="stat"><strong>46</strong><span>municipios</span></div>
-        <div class="stat"><strong>26%</strong><span>de los murales documentados sufrió censura</span></div>
-        <p class="source-note">Datos del mapa colaborativo de Mutante.</p>
+      <aside class="hero-art" aria-label="Afiche tipográfico: la memoria también se pinta">
+        <div class="hero-art-top"><span>MEDELLÍN · COLOMBIA</span><span>01 / 2025</span></div>
+        <div class="hero-art-shape shape-one"></div><div class="hero-art-shape shape-two"></div>
+        <p class="hero-art-phrase">LA<br>MEMORIA<br><em>SE PINTA</em><br>EN COMUNIDAD</p>
+        <div class="hero-art-bottom"><span>CALLE → RED → CALLE</span><span class="hero-art-star" aria-hidden="true">✳</span></div>
       </aside>
     </div>
   </header>
@@ -58,6 +64,25 @@
           <div class="arrow">→</div>
           <div class="loop-item">5<br><b>Registro y memoria</b></div>
         </div>
+        <p class="loop-caption">La comunicación no termina cuando el mensaje se publica. <strong>Empieza otra circulación.</strong></p>
+      </div>
+    </section>
+
+    <section class="section offwhite" id="evidencia">
+      <div class="wrap">
+        <span class="eyebrow">DATOS DEL MAPA COLABORATIVO · MUTANTE</span>
+        <h2 class="section-title">Una consigna, muchos territorios</h2>
+        <div class="evidence-grid" aria-label="Datos verificados del mapa colaborativo">
+          <article class="evidence evidence-lime"><span class="data-index">01 / ALCANCE</span><strong data-count="76">76</strong><span>murales identificados y confirmados</span><i class="evidence-mark" aria-hidden="true">✳</i></article>
+          <article class="evidence evidence-pink"><span class="data-index">02 / TERRITORIO</span><strong data-count="21">21</strong><span>departamentos recorridos por el mensaje</span><i class="evidence-mark" aria-hidden="true">↗</i></article>
+          <article class="evidence evidence-orange"><span class="data-index">03 / EXPANSIÓN</span><strong data-count="46">46</strong><span>municipios con murales registrados</span><i class="evidence-mark" aria-hidden="true">✳</i></article>
+          <article class="evidence evidence-lavender"><span class="data-index">04 / DISPUTA</span><strong><span data-count="26">26</span><small>%</small></strong><span>de los murales tuvo censura: 20 de 76</span><i class="evidence-mark" aria-hidden="true">↯</i></article>
+        </div>
+        <div class="censorship-viz" aria-label="20 de 76 murales tuvieron censura; 11 fueron restaurados">
+          <div><b>20</b><span>censurados</span></div><div class="viz-track"><span></span></div><div><b>11</b><span>restaurados</span></div>
+          <p>El borrado no detuvo la circulación. En 11 casos, la comunidad restauró el mural.</p>
+        </div>
+        <p class="method">Mutante recibió 83 respuestas al formulario inicial y consolidó una base de datos con aportes de 94 personas. La cifra de 76 murales corresponde a la versión final del mapa, no al primer corte. <a href="https://mutante.org/especiales/mapa-colaborativo-las-cuchas-tienen-razon/" target="_blank" rel="noopener">Consultar metodología y datos ↗</a></p>
       </div>
     </section>
 
@@ -112,13 +137,22 @@
         <span class="eyebrow">SÍNTESIS</span>
         <h2 class="section-title">¿Qué nos enseñan estos casos?</h2>
         <div class="findings">
-          <div class="finding"><span>01</span><h3>La comunidad es una relación, no una métrica.</h3><p>No basta con tener muchas visualizaciones. Hay comunidad cuando existe un vínculo compartido, capacidad de participación y apropiación del mensaje.</p></div>
-          <div class="finding"><span>02</span><h3>Lo digital funciona mejor como amplificador y punto de encuentro.</h3><p>La causa y la memoria existían antes de la red. Las plataformas aceleran la circulación, conectan territorios y vuelven replicable una acción.</p></div>
+          <div class="finding"><span>01</span><h3>La comunidad precede a la plataforma.</h3><p>Las madres y familias buscadoras llevaban años denunciando las desapariciones. La red amplifica una lucha y unos vínculos que ya existían.</p></div>
+          <div class="finding"><span>02</span><h3>La red amplifica, pero no crea comunidad automáticamente.</h3><p>Las plataformas aceleran la circulación, conectan territorios y vuelven replicable una acción; el vínculo se construye con participación.</p></div>
           <div class="finding"><span>03</span><h3>La comunicación comunitaria es bidireccional y productiva.</h3><p>La audiencia también produce: pinta, documenta, reporta, verifica, restaura, comparte y convierte experiencias locales en conocimiento colectivo.</p></div>
           <div class="finding"><span>04</span><h3>Online y offline forman un solo circuito.</h3><p>El mural pasa de la calle a la pantalla y de la pantalla regresa a la calle. La separación entre “digital” y “presencial” no explica bien el fenómeno.</p></div>
-          <div class="finding"><span>05</span><h3>La censura puede convertirse en un evento de movilización.</h3><p>El borrado no necesariamente elimina el mensaje: puede hacerlo más visible, despertar solidaridad y producir nuevas réplicas. Eso no elimina el daño, pero cambia la dinámica comunicativa.</p></div>
+          <div class="finding"><span>05</span><h3>Las plataformas son circulación y poder.</h3><p>Las redes sociales comerciales pertenecen a empresas privadas y operan con modelos basados, entre otras cosas, en publicidad y datos. Dan alcance, pero también exponen a moderación, vigilancia, acoso y cambios algorítmicos.</p></div>
           <div class="finding"><span>06</span><h3>Archivar es una forma de resistencia.</h3><p>El mapa, la base de datos y los registros fotográficos convierten una acción efímera en memoria verificable y reutilizable por otras comunidades.</p></div>
         </div>
+      </div>
+    </section>
+
+    <section class="section green" id="viralidad">
+      <div class="wrap narrow viral">
+        <span class="eyebrow">UNA DIFERENCIA CLAVE</span>
+        <h2>Viralidad <em>≠</em><br>comunidad</h2>
+        <div class="viral-compare"><p><b>VIRALIDAD</b><br>Muchas personas reciben algo.</p><p><b>COMUNIDAD</b><br>Muchas personas pueden hacer algo con ello.</p></div>
+        <p>Una comunidad participa, interpreta, transforma, replica, cuida y documenta. Las visualizaciones miden circulación; por sí solas no demuestran apropiación colectiva.</p>
       </div>
     </section>
 
@@ -126,8 +160,9 @@
       <div class="wrap narrow">
         <span class="eyebrow">DEFINICIÓN OPERATIVA</span>
         <h2>¿Qué entendemos por <em>comunitario</em>?</h2>
-        <blockquote>“Comunitario” no significa simplemente que mucha gente vea algo. Significa que existe una causa compartida, vínculos entre personas y capacidad real de participar, apropiarse del mensaje y transformarlo colectivamente.</blockquote>
+        <blockquote>Comunitario es aquello que se construye alrededor de una experiencia, necesidad, territorio, memoria o causa compartida y en lo que las personas tienen capacidad real de participar y apropiarse de la comunicación.</blockquote>
         <p class="lead">En “Las Cuchas tienen razón”, las personas no son espectadoras de una campaña cerrada. Pueden replicar la consigna, crear nuevas piezas, documentar censuras, reportar ubicaciones y sostener la memoria. Por eso el valor del caso no está solo en su alcance, sino en la <strong>capacidad distribuida de hacer y rehacer el mensaje</strong>.</p>
+        <p class="closing-line">La comunidad no es el público del mensaje.<br><strong>Es uno de sus autores.</strong></p>
       </div>
     </section>
 
@@ -135,7 +170,8 @@
       <div class="wrap narrow">
         <span class="eyebrow light">CONCLUSIÓN PARA EXPONER</span>
         <h2>En una frase</h2>
-        <p class="big-quote">La comunicación comunitaria en red aparece cuando una comunidad convierte su memoria y su causa en acciones que pueden circular, ser apropiadas por otros y volver al territorio con más fuerza.</p>
+        <p class="big-quote">“Las Cuchas tienen razón” muestra que una red comunitaria no es simplemente una suma de cuentas conectadas. Es una trama de personas, territorios, memoria y acciones. Internet permite que esa trama viaje más lejos, pero su fuerza surge de la posibilidad de apropiarse del mensaje y devolverlo al mundo físico.</p>
+        <p class="cycle-end">CALLE <span>→</span> RED <span>→</span> CALLE <span>→</span> MEMORIA</p>
         <div class="oral">
           <h3>Versión de 40 segundos</h3>
           <p>“Este caso nos muestra que la comunicación comunitaria no depende de tener redes sociales, sino de que exista una comunidad que participe. Aquí la lucha de las madres buscadoras existía antes del mural y antes de la viralización. El mensaje nace en la calle, pasa a redes, otras personas lo replican en otras ciudades y luego esas nuevas acciones se registran en herramientas digitales. Por eso lo digital funciona más como amplificador, punto de encuentro y archivo que como origen. Y lo comunitario está en que la gente no solo mira: se apropia del mensaje, lo transforma y ayuda a mantener viva la memoria.”</p>
